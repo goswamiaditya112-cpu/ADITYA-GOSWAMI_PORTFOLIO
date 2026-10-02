@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Aditya Goswami - Aspiring Full-Stack Developer learning web development, software engineering, and modern technologies."
+    />
+    <title>Aditya Goswami | Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <!--HEADER TOP PART-->
+      <nav aria-label="System Menu">
+        <span class="menu-apple" aria-hidden="true"
+          ><img src="assets/apple.png" alt="Apple" class="menu-apple-icon"
+        /></span>
+        <span class="menu-app-title">My portfolio</span>
+        <a href="#file" role="menuitem">File</a>
+        <a href="#edit" role="menuitem">Edit</a>
+        <a href="#view" role="menuitem">View</a>
+        <a href="#go" role="menuitem">Go</a>
+        <a href="#window" role="menuitem">Window</a>
+      </nav>
+      <div role="status" aria-label="System Status">
+        <span class="menu-status-item" title="Search"
+          ><img
+            src="assets/search.png"
+            alt="Search"
+            class="status-icon search-icon"
+        /></span>
+        <span class="menu-status-item" title="Wi-Fi"
+          ><svg
+            class="wifi-svg"
+            viewBox="0 0 24 24"
+            width="15"
+            height="15"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 4C7.31 4 3.07 5.9 0 8.98L12 21 24 8.98C20.93 5.9 16.69 4 12 4zm0 3.5c3.67 0 7 1.44 9.47 3.79L12 18.73 2.53 11.29C5 8.94 8.33 7.5 12 7.5z"
+            /></svg
+        ></span>
+        <span class="menu-status-item" title="Battery: 100%"
+          ><img
+            src="assets/battery.png"
+            alt="Battery"
+            class="status-icon battery-icon"
+        /></span>
+        <span id="menu-date">12 Aug 2026</span>
+        <span id="clock" aria-label="Current time">12:30 AM</span>
+      </div>
+    </header>
+    <main>
+      <!--DESKTOP-->
+      <section id="welcome" aria-label="Welcome">
+        <h1>Welcome to My Portfolio</h1>
+      </section>
+      <p>Aspiring Full-Stack Developer</p>
+      <p>
+        Explore my background, skills, and projects through this macOS-inspired
+        desktop.
+      </p>
+
+      <section id="desktop" aria-label="Desktop Shortcuts">
+        <h2 class="visually-hidden">Desktop Shortcuts</h2>
+        <ul>
+          <li>
+            <button type="button" data-window="about" aria-haspopup="dialog">
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >About Me</span
+              >
+            </button>
+          </li>
+          <li>
+            <button type="button" data-window="resume" aria-haspopup="dialog">
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >Resume</span
+              >
+            </button>
+          </li>
+          <li>
+            <button type="button" data-window="projects" aria-haspopup="dialog">
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >Projects</span
+              >
+            </button>
+          </li>
+          <li>
+            <button type="button" data-window="skills" aria-haspopup="dialog">
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >Skills</span
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              data-window="experience"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >Experience</span
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              data-window="education"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >Education</span
+              >
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              data-window="certificates"
+              aria-haspopup="dialog"
+            >
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >Certificates</span
+              >
+            </button>
+          </li>
+          <li>
+            <button type="button" data-window="contact" aria-haspopup="dialog">
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >Contact Me</span
+              >
+            </button>
+          </li>
+          <li>
+            <button type="button" data-window="links" aria-haspopup="dialog">
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >My Links</span
+              >
+            </button>
+          </li>
+          <li>
+            <button type="button" data-window="ai" aria-haspopup="dialog">
+              <img src="assets/folder.png" alt="" class="folder-img" /><span
+                >AI Assistant</span
+              >
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        id="about"
+        role="region"
+        aria-labelledby="title-about"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-about">About Me</h2>
+        </div>
+        <!--ABOUT ME-->
+
+        <div class="about-grid">
+          <div class="about-photo-col">
+            <img
+              src="assets/aditya.jpg"
+              alt="Aditya Goswami"
+              class="about-photo"
+            />
+            <div class="about-badge">Aditya Goswami</div>
+          </div>
+          <div class="about-content-col">
+            <p>
+              Hi, I'm Aditya Goswami. I am an aspiring developer passionate
+              about building web interfaces, learning software development, and
+              understanding modern technologies.
+            </p>
+
+            <p>
+              I am currently learning full-stack web development and actively
+              building hands-on projects to deepen my understanding of frontend
+              and backend concepts.
+            </p>
+
+            <p>
+              My interests center around web development, software engineering,
+              artificial intelligence, and building practical, user-friendly
+              digital experiences.
+            </p>
+
+            <ul>
+              <li>Actively learning full-stack web development</li>
+              <li>Building personal projects through hands-on practice</li>
+              <li>
+                Interested in software engineering, modern web tools, and AI
+                concepts
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        id="projects"
+        role="region"
+        aria-labelledby="title-projects"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-projects">Projects</h2>
+        </div>
+        <!--PROJECTS-->
+        <article>
+          <h3>macOS-Inspired Personal Portfolio</h3>
+          <p>
+            An interactive personal portfolio website featuring a macOS desktop
+            interface, complete with a menu bar, desktop shortcuts, and
+            draggable, minimizable windows.
+          </p>
+          <ol>
+            <li>Semantic HTML5 structure for desktop and window components</li>
+            <li>
+              CSS3 styling, custom macOS window aesthetics, and responsive
+              layout
+            </li>
+            <li>
+              Vanilla JavaScript window management, z-index layering, and
+              bounded dragging
+            </li>
+          </ol>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >GitHub Repository (Placeholder)</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >Live Demo (Placeholder)</a
+              >
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>Project 2 — Full-Stack Web App</h3>
+          <p>
+            Upcoming project currently in planning and early development.
+            Details and repository link will be updated soon.
+          </p>
+        </article>
+        <article>
+          <h3>Project 3 — Interactive Web Tool</h3>
+          <p>
+            Upcoming project focused on interactive frontend capabilities and
+            problem-solving. Coming soon.
+          </p>
+        </article>
+        <article>
+          <h3>Project 4 — Software Exploration</h3>
+          <p>
+            Upcoming project exploring software fundamentals and practical
+            applications. Coming soon.
+          </p>
+        </article>
+      </section>
+      <section
+        id="skills"
+        role="region"
+        aria-labelledby="title-skills"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-skills">Skills</h2>
+        </div>
+        <ol>
+          <li>
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Python</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML (HTML5 semantic markup)</li>
+              <li>CSS (CSS3 layouts &amp; styling — learning)</li>
+              <li>
+                JavaScript (DOM manipulation &amp; interactivity — learning)
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Developer Tools &amp; Platforms</h3>
+            <ul>
+              <li>Git (Version Control)</li>
+              <li>GitHub (Code Hosting &amp; Collaboration)</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Areas of Interest</h3>
+            <ul>
+              <li>Full-Stack Web Development</li>
+              <li>Software Engineering Fundamentals</li>
+              <li>Artificial Intelligence Concepts</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section
+        id="experience"
+        role="region"
+        aria-labelledby="title-experience"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-experience">Experience</h2>
+        </div>
+        <!--EXPERIENCE-->
+
+        <p>
+          I am currently building my practical experience through independent
+          study, hands-on personal projects, and continuous coding practice.
+        </p>
+
+        <h3>Personal Projects</h3>
+
+        <p>
+          Designing and building interactive web projects, including this
+          macOS-inspired portfolio, to put web fundamentals into practice and
+          explore real-world UI design.
+        </p>
+
+        <h3>Learning Journey</h3>
+
+        <p>
+          Focused on building a strong foundation in core programming and web
+          technologies—learning HTML, CSS, JavaScript, and progressing steadily
+          toward full-stack development.
+        </p>
+      </section>
+      <section
+        id="education"
+        role="region"
+        aria-labelledby="title-education"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-education">Education</h2>
+        </div>
+        <!--EDUCATION-->
+        <article>
+          <h3>Bachelor of Technology (B.Tech)</h3>
+          <p><strong>Techno International New Town</strong></p>
+          <p>2024 – Present</p>
+          <p>
+            Undergraduate degree studies focused on engineering, computer
+            science fundamentals, and software development principles.
+          </p>
+        </article>
+
+        <article>
+          <h3>Higher Secondary Education</h3>
+
+          <p><strong>Sri Chaitanya Techno School</strong></p>
+
+          <p>2022 – 2024</p>
+          <p>
+            Completed higher secondary education curriculum with a focus on
+            science and foundational mathematics.
+          </p>
+        </article>
+      </section>
+      <section
+        id="certificates"
+        role="region"
+        aria-labelledby="title-certificates"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-certificates">Certificates</h2>
+        </div>
+        <!--CERTIFICATES-->
+        <p>
+          Coursework records and technical certifications will be documented
+          here as they are completed.
+        </p>
+        <ol>
+          <li>
+            <p><strong>Technical Course Certification (Placeholder)</strong></p>
+            <p>Issuing Platform / Organization — In Progress</p>
+            <a href="#">View Certificate (Placeholder)</a>
+          </li>
+          <li>
+            <p>
+              <strong
+                >Web Development / Programming Workshop (Placeholder)</strong
+              >
+            </p>
+            <p>Issuing Platform / Organization — Details to be updated</p>
+            <a href="#">View Certificate (Placeholder)</a>
+          </li>
+        </ol>
+      </section>
+
+      <section
+        id="resume"
+        role="region"
+        aria-labelledby="title-resume"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-resume">Resume</h2>
+        </div>
+        <!--RESUMES-->
+        <p>
+          A comprehensive overview of my academic background, technical skills,
+          coursework, and personal project development.
+        </p>
+        <h3>Resume Preview — Document Available Upon Update</h3>
+        <p>
+          Detailed resume covering B.Tech education at Techno International New
+          Town, programming coursework, and web projects.
+        </p>
+        <a href="#" aria-label="Download Resume (Placeholder)"
+          >Download Resume (PDF)</a
+        >
+      </section>
+      <section
+        id="contact"
+        role="region"
+        aria-labelledby="title-contact"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-contact">Contact Me</h2>
+        </div>
+        <!--CONTACT ME-->
+
+        <p>
+          Feel free to reach out for collaborations, project discussions, or
+          inquiries.
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:goswamiaditya112@gmail.com"
+            >goswamiaditya112@gmail.com</a
+          >
+        </p>
+
+        <p><strong>Location:</strong> Kolkata, India</p>
+
+        <h3>Find Me Online</h3>
+
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          >GitHub (Placeholder)</a
+        >
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          >LinkedIn (Placeholder)</a
+        >
+
+        <h3>Send Me a Message</h3>
+
+        <form action="#" method="post">
+          <label for="contact-name">
+            Name <span aria-hidden="true">*</span>
+            <input
+              id="contact-name"
+              placeholder="Enter your name"
+              type="text"
+              name="name"
+              required
+              autocomplete="name"
+            />
+          </label>
+          <label for="contact-email">
+            Email <span aria-hidden="true">*</span>
+            <input
+              id="contact-email"
+              placeholder="Enter your email"
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+            />
+          </label>
+          <label for="contact-message">
+            Message <span aria-hidden="true">*</span>
+            <textarea
+              id="contact-message"
+              placeholder="Write your message here..."
+              name="message"
+              rows="5"
+              cols="34"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      <section
+        id="links"
+        role="region"
+        aria-labelledby="title-links"
+        tabindex="-1"
+      >
+        <div class="window-header">
+          <h2 id="title-links">My Links</h2>
+        </div>
+        <!--MY LINKS-->
+        <p>Profiles and online developer references:</p>
+        <ul>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >GitHub — Profile &amp; Repositories (Placeholder)</a
+            >
+          </li>
+
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >LinkedIn — Professional Profile (Placeholder)</a
+            >
+          </li>
+
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >Portfolio — Live Website</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="ai" role="region" aria-labelledby="title-ai" tabindex="-1">
+        <div class="window-header">
+          <h2 id="title-ai">AI Assistant</h2>
+        </div>
+
+        <p>
+          <strong>AI Assistant — In Progress</strong>
+        </p>
+
+        <p>
+          This feature is currently under development and will be integrated in
+          a future version.
+        </p>
+      </section>
+    </main>
+    <footer aria-label="Application Dock">
+      <!--FOOTER-->
+      <h2 class="visually-hidden">Dock Applications</h2>
+      <ul>
+        <li>
+          <div class="dock-item" aria-label="Finder">
+            <img src="assets/dock/finder.png" alt="Finder" class="dock-icon" />
+            <span class="dock-tooltip">Finder</span>
+          </div>
+        </li>
+        <li>
+          <div class="dock-item" aria-label="Safari">
+            <img src="assets/dock/safari.png" alt="Safari" class="dock-icon" />
+            <span class="dock-tooltip">Safari</span>
+          </div>
+        </li>
+        <li>
+          <div class="dock-item" aria-label="VS Code">
+            <img src="assets/dock/vscode.png" alt="VS Code" class="dock-icon" />
+            <span class="dock-tooltip">VS Code</span>
+          </div>
+        </li>
+        <li>
+          <div class="dock-item" aria-label="Terminal">
+            <img
+              src="assets/dock/terminal.png"
+              alt="Terminal"
+              class="dock-icon"
+            />
+            <span class="dock-tooltip">Terminal</span>
+          </div>
+        </li>
+        <li>
+          <div class="dock-item" aria-label="GitHub">
+            <img src="assets/dock/github.png" alt="GitHub" class="dock-icon" />
+            <span class="dock-tooltip">GitHub</span>
+          </div>
+        </li>
+        <li>
+          <div class="dock-item" aria-label="Notes">
+            <img src="assets/dock/notes.png" alt="Notes" class="dock-icon" />
+            <span class="dock-tooltip">Notes</span>
+          </div>
+        </li>
+        <li>
+          <div class="dock-item" aria-label="Settings">
+            <img
+              src="assets/dock/settings.png"
+              alt="Settings"
+              class="dock-icon"
+            />
+            <span class="dock-tooltip">Settings</span>
+          </div>
+        </li>
+        <li class="dock-separator-li">
+          <div class="dock-item dock-trash" aria-label="Trash">
+            <img src="assets/dock/trash.png" alt="Trash" class="dock-icon" />
+            <span class="dock-tooltip">Trash</span>
+          </div>
+        </li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
