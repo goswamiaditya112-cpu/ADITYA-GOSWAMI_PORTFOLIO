@@ -482,9 +482,9 @@ main > section:nth-of-type(n + 3) p {
   line-height: 1.65;
 }
 
-/* ---------------------------------------------------------
+/* 
    8. ABOUT ME (TWO-COLUMN PROFILE LAYOUT)
-   --------------------------------------------------------- */
+    */
 
 .about-grid {
   display: grid;
@@ -542,9 +542,9 @@ main > section:nth-of-type(3) li {
   list-style: disc;
 }
 
-/* ---------------------------------------------------------
+/* 
    9. PROJECTS
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(4) article {
   padding: 20px 0;
@@ -615,9 +615,9 @@ main > section:nth-of-type(4) article a:active {
   transform: scale(0.97);
 }
 
-/* ---------------------------------------------------------
+/* 
    10. SKILLS
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(5) > ol {
   display: grid;
@@ -665,9 +665,9 @@ main > section:nth-of-type(5) ul li {
   margin-bottom: 0;
 }
 
-/* ---------------------------------------------------------
+/* 
    11. EXPERIENCE
-   --------------------------------------------------------- */
+   */
 
 main > section:nth-of-type(6) h3 {
   margin-top: 22px;
@@ -678,9 +678,9 @@ main > section:nth-of-type(6) h3 {
   border-bottom: 1px solid #e5e5ea;
 }
 
-/* ---------------------------------------------------------
+/* 
    12. EDUCATION
-   --------------------------------------------------------- */
+   */
 
 main > section:nth-of-type(7) article {
   background: #f7f7f9;
@@ -711,9 +711,9 @@ main > section:nth-of-type(7) article p:last-child {
   margin-bottom: 0;
 }
 
-/* ---------------------------------------------------------
+/* 
    13. CERTIFICATES
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(8) > ol {
   display: flex;
@@ -741,20 +741,26 @@ main > section:nth-of-type(8) a {
   font-weight: 500;
 }
 
+.certificate-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
 main > section:nth-of-type(8) a:hover {
   text-decoration: underline;
 }
 
-/* ---------------------------------------------------------
+/* 
    14. RESUME
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(9) {
   text-align: left;
 }
 
 main > section:nth-of-type(9) h3 {
-  padding: 36px 20px;
+  padding: 24px 10px;
   margin: 18px 0;
   text-align: center;
   color: #55555a;
@@ -763,6 +769,11 @@ main > section:nth-of-type(9) h3 {
   border-radius: 8px;
   font-size: 15px;
   font-weight: 500;
+}
+.resume-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
 }
 
 main > section:nth-of-type(9) > a {
@@ -789,9 +800,9 @@ main > section:nth-of-type(9) > a:active {
   transform: scale(0.97);
 }
 
-/* ---------------------------------------------------------
+/*
    15. CONTACT
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(10) > a {
   display: inline-block;
@@ -815,9 +826,9 @@ main > section:nth-of-type(10) > a:hover {
   text-decoration: none;
 }
 
-/* ---------------------------------------------------------
+/* 
    16. CONTACT FORM
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(10) form {
   display: flex;
@@ -890,9 +901,9 @@ main > section:nth-of-type(10) button[type="submit"]:active {
   transform: scale(0.97);
 }
 
-/* ---------------------------------------------------------
+/* 
    17. MY LINKS
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(11) ul {
   display: flex;
@@ -933,9 +944,9 @@ main > section:nth-of-type(11) a:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* ---------------------------------------------------------
+/* 
    18. AI ASSISTANT — IN PROGRESS
-   --------------------------------------------------------- */
+    */
 
 main > section:nth-of-type(12) {
   background: #fafafc;
@@ -952,9 +963,9 @@ main > section:nth-of-type(12) strong {
   margin-bottom: 8px;
 }
 
-/* ---------------------------------------------------------
+/* 
    19. MAC DOCK (FROSTED GLASS CONTAINER & APP ICONS)
-   --------------------------------------------------------- */
+    */
 
 footer {
   position: fixed;
@@ -1085,9 +1096,9 @@ footer li {
   border-left: 1px solid rgba(255, 255, 255, 0.32);
 }
 
-/* ---------------------------------------------------------
+/* 
    20. SCROLLBAR
-   --------------------------------------------------------- */
+    */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -1107,9 +1118,9 @@ footer li {
   background: rgba(255, 255, 255, 0.75);
 }
 
-/* ---------------------------------------------------------
+/* -
    21. TABLET (max-width: 850px)
-   --------------------------------------------------------- */
+   */
 
 @media (max-width: 850px) {
   header nav {
@@ -1179,9 +1190,9 @@ footer li {
   }
 }
 
-/* ---------------------------------------------------------
+/* 
    22. MOBILE (max-width: 600px)
-   --------------------------------------------------------- */
+   */
 
 @media (max-width: 600px) {
   header {
@@ -1332,9 +1343,9 @@ footer li {
   }
 }
 
-/* ---------------------------------------------------------
+/* 
    23. SMALL MOBILE (max-width: 400px)
-   --------------------------------------------------------- */
+    */
 
 @media (max-width: 400px) {
   #menu-date {
@@ -1402,9 +1413,9 @@ footer li {
   }
 }
 
-/* ---------------------------------------------------------
+/* 
    24. JAVASCRIPT WINDOW STATES & CONTROLS (BASE DESKTOP)
-   --------------------------------------------------------- */
+   */
 
 /* Default: portfolio windows are hidden when closed */
 main > section:nth-of-type(n + 3) {

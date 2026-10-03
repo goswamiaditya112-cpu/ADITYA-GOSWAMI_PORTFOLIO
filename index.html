@@ -179,30 +179,23 @@
           </div>
           <div class="about-content-col">
             <p>
-              Hi, I'm Aditya Goswami. I am an aspiring developer passionate
-              about building web interfaces, learning software development, and
-              understanding modern technologies.
+             <h3> Hi, I’m Aditya Goswami</h3>
+              </p>
+
+            <p>
+              I’m a Computer Science student and Full-Stack Web Developer passionate about building modern, user-focused web applications. I work with technologies including React.js, JavaScript, HTML5, Tailwind CSS, Node.js, Express.js, FastAPI, MongoDB, MySQL, and PostgreSQL. I enjoy turning ideas into practical applications and continuously improving my development skills through hands-on projects.
             </p>
 
             <p>
-              I am currently learning full-stack web development and actively
-              building hands-on projects to deepen my understanding of frontend
-              and backend concepts.
-            </p>
-
-            <p>
-              My interests center around web development, software engineering,
-              artificial intelligence, and building practical, user-friendly
-              digital experiences.
+              Alongside web development, I’m deeply interested in AI and LLM technologies. I have practical knowledge of Prompt Engineering, Retrieval-Augmented Generation (RAG), vector databases, embeddings, semantic search, Sentence Transformers, and Faster-Whisper. I’ve also worked on StudyRewind, an AI-powered educational search application involving semantic search, document processing, embeddings, and AI-assisted development.
             </p>
 
             <ul>
-              <li>Actively learning full-stack web development</li>
-              <li>Building personal projects through hands-on practice</li>
-              <li>
-                Interested in software engineering, modern web tools, and AI
-                concepts
-              </li>
+                <li>Building full-stack web applications through hands-on projects</li>
+                <li>Continuously learning modern web development and software engineering</li>
+              <li>Exploring AI, LLMs, RAG, embeddings, and semantic search</li>
+              <li>Interested in turning ideas into practical, user-focused applications</li>
+              </ul>
             </ul>
           </div>
         </div>
@@ -218,21 +211,18 @@
         </div>
         <!--PROJECTS-->
         <article>
-          <h3>macOS-Inspired Personal Portfolio</h3>
+          <h3>Portfolio — macOS-Inspired Interactive Developer Portfolio</h3>
           <p>
-            An interactive personal portfolio website featuring a macOS desktop
-            interface, complete with a menu bar, desktop shortcuts, and
-            draggable, minimizable windows.
+            An interactive personal portfolio designed as a macOS-inspired desktop environment, featuring desktop folders, draggable portfolio windows, window controls, application Dock, responsive layouts, and a custom desktop interface.
           </p>
           <ol>
-            <li>Semantic HTML5 structure for desktop and window components</li>
+            <li>Tech: HTML5, CSS3, JavaScrip</li>
             <li>
               CSS3 styling, custom macOS window aesthetics, and responsive
               layout
             </li>
             <li>
-              Vanilla JavaScript window management, z-index layering, and
-              bounded dragging
+              Future: A portfolio-grounded LLM assistant and job-description matching system are planned as future extensions.
             </li>
           </ol>
           <ul>
@@ -243,33 +233,76 @@
             </li>
             <li>
               <a href="#" target="_blank" rel="noopener noreferrer"
-                >Live Demo (Placeholder)</a
+                >Live Demo (Yet to add)</a
               >
             </li>
           </ul>
         </article>
         <article>
-          <h3>Project 2 — Full-Stack Web App</h3>
+          <h3>StudyRewind — AI-Powered Educational Search Assistant</h3>
           <p>
-            Upcoming project currently in planning and early development.
-            Details and repository link will be updated soon.
+            What it is: StudyRewind is a web application that transforms YouTube lecture playlists and PDF study notes into 
+a searchable knowledge base. Students can type a natural language question and find the exact moment in a 
+lecture video or the exact page in a textbook where a concept is explained.
+          </p>
+          <p>The problem it solves: Engineering and science students in India commonly study from long YouTube lecture 
+series (200–700 videos per subject). Finding a specific concept requires scrubbing through hours of video. 
+StudyRewind eliminates this by making all lecture content searchable by meaning.</p>
+
+<h5>How it works:</h5>
+
+<ol>
+  <li> Students import any public YouTube playlist or upload PDF notes</li>
+   <li>StudyRewind transcribes video audio using local Whisper AI and extracts PDF text using pypdf</li>
+<li>Content is split into chunks and converted to 384-dimensional vectors using a local multilingual model</li>
+<li>Vectors are stored in PostgreSQL with the pgvector extension</li>
+<li> Students type natural language queries, which are also vectorized, and the system returns the most 
+semantically similar transcript chunks and PDF sections with timestamps and page numbers</li>
+</ol>
+<h5>What makes it technically interesting:</h5>
+<ul>
+<li> Entirely local AI pipeline — no paid APIs, no cloud AI services</li>
+<li> Three-level transcription fallback: YouTube captions → yt-dlp subtitle download → Whisper</li>
+<li>Supports Hindi and English content (Indian educational YouTube content)</li>
+<li> Strict security: Argon2id passwords, JWT auth, ownership-based authorization, IDOR prevention</li>
+  <li>184 automated tests including a security hardening test suit</li>
+</ul>
+
+<p><h5>Technology:</h5>
+
+<p> FastAPI · PostgreSQL · pgvector · React + TypeScript · faster-whisper · sentence-transformers · yt-dlp 
+· SQLAlchemy · Alembic · Argon2id · PyJWT</p>
+</p>
+<ul>
+            <li>
+              <a href="https://github.com/goswamiaditya112-cpu/studyrewinds" target="_blank" rel="noopener noreferrer"
+                >GitHub Repository (Placeholder)</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >Live Demo (Yet to add)</a
+              >
+            </li>
+          </ul>
+</article>
+        <article>
+          <h3></h3>
+          <p>
+            
           </p>
         </article>
         <article>
-          <h3>Project 3 — Interactive Web Tool</h3>
+          <h3></h3>
           <p>
-            Upcoming project focused on interactive frontend capabilities and
-            problem-solving. Coming soon.
+
           </p>
         </article>
-        <article>
-          <h3>Project 4 — Software Exploration</h3>
-          <p>
-            Upcoming project exploring software fundamentals and practical
-            applications. Coming soon.
-          </p>
-        </article>
+
+       
+
       </section>
+       <!-- SKILLS -->
       <section
         id="skills"
         role="region"
@@ -290,30 +323,61 @@
           </li>
 
           <li>
-            <h3>Web Development</h3>
+            <h3>Frontend Development</h3>
             <ul>
-              <li>HTML (HTML5 semantic markup)</li>
-              <li>CSS (CSS3 layouts &amp; styling — learning)</li>
+              <li>HTML5</li>
+              <li>Tailwind CSS</li>
               <li>
-                JavaScript (DOM manipulation &amp; interactivity — learning)
+                JavaScript
               </li>
+              <li>React.js</li>
+
+            </ul>
+            
+          </li>
+<li>
+<h3>Backend Development</h3>
+<ul><li>Node.js</li>
+<li>Express.js</li>
+<li>FastAPI</li>
+<li>JWT Authentication</li>
+              <li>SQLAlchemy 2.0</li>
+              <li>Alembic</li></ul>
+
+</li>
+          <li>  <h3>Databases</h3>
+              <ul><li>
+                 MongoDB 
+             MySQL </li>
+            <li>PostgreSQL</li>
+<li>pgvector</li>
+
+            </ul>
+            </li>
+
+          <li>
+            
+            <h3>AI / LLM</h3>
+            <ul>
+              <li>Prompt Engineering</li>
+              <li>Retrieval-Augmented Generation (RAG)</li>
+              <li>Vector Databases</li>
+<li>Embeddings</li>
+<li>Semantic Search</li>
+              <li>Faster-Whisper</li>
+              <li>Sentence Transformers</li>
             </ul>
           </li>
 
           <li>
-            <h3>Developer Tools &amp; Platforms</h3>
+            <h3>AI-Assisted Development</h3>
             <ul>
-              <li>Git (Version Control)</li>
-              <li>GitHub (Code Hosting &amp; Collaboration)</li>
-            </ul>
-          </li>
-
-          <li>
-            <h3>Areas of Interest</h3>
-            <ul>
-              <li>Full-Stack Web Development</li>
-              <li>Software Engineering Fundamentals</li>
-              <li>Artificial Intelligence Concepts</li>
+              <li><p>Strong working knowledge of AI tools, with
+the ability to use them efficiently and effectively across the development workflow</p></li>
+              <li>Claude</li>
+              <li>Codex</li>
+              <li>GitHub Copilot</li>
+              <li>Antigravity</li>
             </ul>
           </li>
         </ol>
@@ -337,17 +401,13 @@
         <h3>Personal Projects</h3>
 
         <p>
-          Designing and building interactive web projects, including this
-          macOS-inspired portfolio, to put web fundamentals into practice and
-          explore real-world UI design.
+          Designing and building interactive web projects, including this macOS-inspired portfolio and StudyRewind, an AI-powered educational search assistant, to put web development fundamentals into practice and explore real-world UI design, full-stack development, and AI-powered applications.
         </p>
 
         <h3>Learning Journey</h3>
 
         <p>
-          Focused on building a strong foundation in core programming and web
-          technologies—learning HTML, CSS, JavaScript, and progressing steadily
-          toward full-stack development.
+          Building a strong foundation in programming and full-stack development through hands-on projects, progressing from C, C++, Python, JavaScript, HTML5, and CSS3 to React.js, Node.js, Express.js, FastAPI, and database technologies. Alongside web development, exploring AI/LLM concepts including Prompt Engineering, RAG, embeddings, vector databases, and semantic search through projects like StudyRewind.
         </p>
       </section>
       <section
@@ -398,19 +458,21 @@
         </p>
         <ol>
           <li>
-            <p><strong>Technical Course Certification (Placeholder)</strong></p>
-            <p>Issuing Platform / Organization — In Progress</p>
-            <a href="#">View Certificate (Placeholder)</a>
+            <p><strong>Al Fluency: Framework & Foundations</strong></p>
+            <p>ANTHROPIC</p>
+           <img src="assets/Al Fluency Framework & Foundations.jpg" alt="" class="certificate-image">
           </li>
+
           <li>
             <p>
               <strong
-                >Web Development / Programming Workshop (Placeholder)</strong
+                ></strong
               >
             </p>
-            <p>Issuing Platform / Organization — Details to be updated</p>
-            <a href="#">View Certificate (Placeholder)</a>
+            <p></p>
+            
           </li>
+
         </ol>
       </section>
 
@@ -428,12 +490,10 @@
           A comprehensive overview of my academic background, technical skills,
           coursework, and personal project development.
         </p>
-        <h3>Resume Preview — Document Available Upon Update</h3>
-        <p>
-          Detailed resume covering B.Tech education at Techno International New
-          Town, programming coursework, and web projects.
-        </p>
-        <a href="#" aria-label="Download Resume (Placeholder)"
+        <h3> 
+          <img src="assets/Aditya_Goswami_Resume_image.jpg" alt="" class="resume-image">
+        </h3>
+        <a href="assets/Aditya_Goswami_Resume.pdf" aria-label="Download Resume (Placeholder)"
           >Download Resume (PDF)</a
         >
       </section>
@@ -449,8 +509,7 @@
         <!--CONTACT ME-->
 
         <p>
-          Feel free to reach out for collaborations, project discussions, or
-          inquiries.
+          Feel free to reach out 
         </p>
 
         <p>
@@ -462,14 +521,16 @@
 
         <p><strong>Location:</strong> Kolkata, India</p>
 
-        <h3>Find Me Online</h3>
+        <!-- --------------------find me command out ------------------------------------------ -->
+
+        <!-- <h3>Find Me Online</h3>
 
         <a href="#" target="_blank" rel="noopener noreferrer"
           >GitHub (Placeholder)</a
         >
         <a href="#" target="_blank" rel="noopener noreferrer"
           >LinkedIn (Placeholder)</a
-        >
+        > -->
 
         <h3>Send Me a Message</h3>
 
@@ -551,8 +612,12 @@
         </p>
 
         <p>
-          This feature is currently under development and will be integrated in
-          a future version.
+          <ul>
+<li>A future AI assistant grounded in my portfolio data.</li>
+<li>Designed to answer questions about my skills, projects, education, and technical background.</li>
+<li>Planned to use LLMs and retrieval-based techniques to make portfolio information easier to explore.</li>
+            <li>Status: Currently learning and planned for a future version.</li>
+          </ul>
         </p>
       </section>
     </main>
